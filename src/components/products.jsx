@@ -25,7 +25,7 @@ products:[
     <div className="card">
     <div className="card-body">
     <h3 className='card-title'>{product.title}</h3>
-    <p className='card-text'>
+    <p className='card-text text-primary'>
     <b>Price:</b>${product.price}<br/>
     <button className='btn btn-danger'type='button' onClick={()=>{this.removeFromCart(product.id)}}>Remove</button>
 </p>
