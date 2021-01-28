@@ -14,7 +14,7 @@ products:[
         products=products.filter(product=>product.id!==productId);
         this.setState({products})
      }
-
+// render
      render() { 
         const {products}=this.state;
         return (
