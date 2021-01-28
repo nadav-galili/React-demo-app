@@ -6,7 +6,8 @@ import Mydemo from './components/mydemo';
 // import Users from './components/users';
 // import Person from './components/person';
 // import User from './components/User'
-import Products from './components/products'
+import Products from './components/products';
+import Tasks from './components/Tasks'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/*  <Users/>  */}
     {/* <Mydemo/> */} 
      <Products/>
+     <Tasks/>
     {/* <Person/>*/ } 
     {/*<User/> */} 
 

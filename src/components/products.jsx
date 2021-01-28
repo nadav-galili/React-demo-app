@@ -8,7 +8,7 @@ products:[
     {id:3, title:'Product 3', price:75.5}
 ]
      }
-
+// remove selected item from the list
      removeFromCart=(productId)=>{
       let  {products}=this.state;
         products=products.filter(product=>product.id!==productId);
