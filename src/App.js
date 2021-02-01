@@ -8,7 +8,7 @@ import "./App.css";
 // import Products from "./components/products";
 // import Tasks from "./components/Tasks";
 import News from "./components/news";
-import PageHeader from "./components/pageheader";
+// import PageHeader from "./components/pageheader";
 
 function App() {
   return (

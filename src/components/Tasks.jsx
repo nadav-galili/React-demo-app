@@ -44,7 +44,9 @@ class Tasks extends Component {
                   <th>ID</th>
                   <th>Title</th>
                   <th>Done</th>
+
                   <th>Status change</th>
+
                   <th>Remove task</th>
                 </tr>
               </thead>
