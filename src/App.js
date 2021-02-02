@@ -8,13 +8,14 @@ import "./App.css";
 // import Products from "./components/products";
 // import Tasks from "./components/Tasks";
 import News from "./components/news";
+import Jobs from "./components/jobs";
 // import PageHeader from "./components/pageheader";
 
 function App() {
   return (
     <div className="App">
       <News />
-      <News />
+      <Jobs />
       {/*  <Users/>  */}
       {/* <Mydemo/> */}
       {/* <Jobs /> */}

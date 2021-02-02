@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Job from "./job";
+import PageHeader from "./pageheader";
 
 class Jobs extends Component {
   state = {
@@ -28,11 +29,7 @@ class Jobs extends Component {
     const { jobs } = this.state;
     return (
       <div className="container mt-3">
-        <div className="row">
-          <div className="col-12 mb-3">
-            <h1 className="display-4">Jobs Page</h1>
-          </div>
-        </div>
+        <PageHeader>Jobs Page</PageHeader>
         <div className="row">
           {jobs.map((job) => (
             <Job job={job} key={job.id} />
