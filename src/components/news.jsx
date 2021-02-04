@@ -12,6 +12,13 @@ class News extends Component {
       { id: 5, title: "title 5", article: "article 5", date: "8/1/21" },
     ],
   };
+
+  removeNew = (newId) => {
+    let { news } = this.state;
+    news = news.filter((item) => item.id !== newId);
+    this.setState({ news });
+  };
+
   render() {
     const { news } = this.state;
     return (
@@ -19,7 +26,11 @@ class News extends Component {
         <PageHeader>News Page</PageHeader>
         <div className="row">
           {news.map((item) => (
-            <New item={item} key={item.id} />
+            <New
+              item={item}
+              key={item.id}
+              removeNew={() => this.removeNew(item.id)}
+            />
           ))}
         </div>
       </div>

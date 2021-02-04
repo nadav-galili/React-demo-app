@@ -25,6 +25,12 @@ class Jobs extends Component {
       },
     ],
   };
+
+  removeJob = (jobId) => {
+    let { jobs } = this.state;
+    jobs = jobs.filter((item) => item.id !== jobId);
+    this.setState({ jobs });
+  };
   render() {
     const { jobs } = this.state;
     return (
@@ -32,7 +38,13 @@ class Jobs extends Component {
         <PageHeader>Jobs Page</PageHeader>
         <div className="row">
           {jobs.map((job) => (
-            <Job job={job} key={job.id} />
+            <Job
+              job={job}
+              key={job.id}
+              removeJob={() => {
+                this.removeJob(job.id);
+              }}
+            />
           ))}
         </div>
       </div>

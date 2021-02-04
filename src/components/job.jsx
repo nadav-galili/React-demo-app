@@ -1,6 +1,6 @@
 import React from "react";
 
-const Job = ({ job }) => {
+const Job = ({ job, removeJob }) => {
   return (
     <div className="col-md-6 col-lg-4 col-xl-3 mb-3">
       <div className="card">
@@ -15,6 +15,15 @@ const Job = ({ job }) => {
           <p>
             <b>Sallery:$</b>
             {job.sallery}
+          </p>
+          <p>
+            <button
+              type="button"
+              onClick={removeJob}
+              className="btn btn-primary"
+            >
+              Remove
+            </button>
           </p>
         </div>
       </div>

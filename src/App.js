@@ -7,15 +7,19 @@ import "./App.css";
 // import User from './components/User'
 // import Products from "./components/products";
 // import Tasks from "./components/Tasks";
-import News from "./components/news";
-import Jobs from "./components/jobs";
+// import News from "./components/news";
+// import Jobs from "./components/jobs";
 // import PageHeader from "./components/pageheader";
+// import Countries from "./components/countries";
+import Users2 from "./components/users2";
 
 function App() {
   return (
     <div className="App">
-      <News />
-      <Jobs />
+      <Users2 />
+      {/* <Countries /> */}
+      {/* <News /> */}
+      {/* <Jobs /> */}
       {/*  <Users/>  */}
       {/* <Mydemo/> */}
       {/* <Jobs /> */}
